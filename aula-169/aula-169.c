@@ -2,10 +2,13 @@
 #include<stdlib.h>
 #include<string.h>
 /**
- * Como preencher uma STRUCT com dados lidos do teclado? | Aula 168
+ * Posso usar uma STRUCT dentro de outra STRUCT? | Aula 169
  */
-
     typedef struct {
+        int dia,mes,ano;
+    }Nascimento;
+    typedef struct {
+        Nascimento data;
         int idade;
         char sexo[2];
         char nome[100];
@@ -13,7 +16,7 @@
     }Pessoa;
 
 int main(int argc, char const *argv[]){
-
+    
     Pessoa p1;
     printf("Digite seu nome: \n");
     fgets(p1.nome, 100,stdin);
