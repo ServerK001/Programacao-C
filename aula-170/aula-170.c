@@ -2,8 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 /**
- * Posso usar uma STRUCT dentro de outra STRUCT? | Aula 169
- * Isso é uma struct aninhada
+ * De quanta memória uma STRUCT precisa? | Aula 170
+ * usanso sizeof()
  */
     typedef struct {
         int dia,mes,ano;
@@ -11,14 +11,20 @@
     typedef struct {
         Nascimento data;
         int idade;
-        char sexo[2];
+        char sexo;
         char nome[100];
 
     }Pessoa;
 
 int main(int argc, char const *argv[]){
-    
+
+        
     Pessoa p1;
+
+    printf("Tamanho da variavel: %d \n",sizeof(p1.data));
+    printf("Tamanho da variavel: %d \n",sizeof(p1));
+    
+
     printf("Digite seu nome: \n");
     fgets(p1.nome, 100,stdin);
 
@@ -26,7 +32,7 @@ int main(int argc, char const *argv[]){
     scanf("%d", &p1.idade);
 
     printf("Digite se sexo, sendo F ou M: \n");
-    scanf("%c",&p1.sexo);
+    scanf("%s", &p1.sexo);
 
     printf("===== Pessoa 1 =====  \n");
     printf("| Nome: %s  \n", p1.nome);
