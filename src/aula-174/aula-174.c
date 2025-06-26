@@ -48,6 +48,7 @@
 int main(int argc, char const *argv[]){
     Pessoa pessoa;
     pessoa = lerPessoa();
+    
     imprimirPessoa(pessoa);
 
     int vet[10];
