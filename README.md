@@ -25,9 +25,9 @@ Este repositório contém um plano completo para aprender a linguagem C com foco
 ## 🧬 Fase 2 – Ponteiros e Alocação Dinâmica (10 dias)
 | Dia | Tópico                                         | Status |
 |-----|------------------------------------------------|--------|
-| 11  | Ponteiros básicos                              | ⬜      |
-| 12  | malloc, calloc, free, realloc                  | ⬜      |
-| 13  | Vetores dinâmicos                              | ⬜      |
+| 11  | Ponteiros básicos                              | ✅      |
+| 12  | malloc, calloc, free, realloc                  | ✅      |
+| 13  | Vetores dinâmicos                              | ✅      |
 | 14  | Matrizes dinâmicas                             | ⬜      |
 | 15  | Structs com malloc                             | ⬜      |
 | 16  | Vetores de structs                             | ⬜      |
